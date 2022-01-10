@@ -1,4 +1,3 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { NgModel } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
@@ -16,7 +15,6 @@ import { CoreModule } from 'src/@core/core.module';
 import { JSONPlaceHolderAPI } from 'src/@core/api/jsonplaceholder-api';
 
 import { AppRoutingModule } from './app-routing.module';
-import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -24,10 +22,8 @@ import { RouterModule } from '@angular/router';
     NgModel
   ],
   imports: [
-    RouterModule,
     AppRoutingModule,
     HttpClientModule,
-    BrowserModule,
     BrowserAnimationsModule,
     MatToolbarModule,
     MatIconModule,
