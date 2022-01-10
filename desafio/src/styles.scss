@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+frk-albums {
+    .mat-column-title {
+        padding-left: 1vw !important;
+        width: calc((100vw - 5vw) - 69px);
+    }    
+}
+
+frk-posts {
+    .mat-column-title {
+        padding-left: 1vw !important;
+        width: 32vw;
+    }
+
+    .mat-column-body {
+        padding-left: 1vw !important;
+        width: calc((100vw - 37vw) - 83px);
+    }   
+}
+
+frk-todos {
+    .mat-column-title {
+        padding-left: 1vw !important;
+        width: calc((100vw - 10vw) - 91px);
+    }
+
+    .mat-column-completed {
+        text-align: center;
+        padding-left: 1vw !important;
+        width: 5vw;
+    }
+}
+
+

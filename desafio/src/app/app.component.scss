@@ -1,0 +1,27 @@
+.title {
+    margin-left: 10px;
+    min-width: 36vw;
+}
+
+.user {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+
+    mat-icon {
+        margin-right: 0.5vw;
+    }
+}
+
+.mat-toolbar {
+    height: 9vh;
+}
+
+.mat-drawer-container {
+    height: calc(100% - 9vh);
+}
+
+.mat-drawer-side.mat-drawer-end {
+    padding: 2vh 1vw;
+    min-width: 30vh;
+}

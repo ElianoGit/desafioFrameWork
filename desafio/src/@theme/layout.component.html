@@ -1,0 +1,14 @@
+<div class="table">
+    <mat-spinner *ngIf="matTableDataSource?.data.length == 0"></mat-spinner>
+    <table mat-table [dataSource]="matTableDataSource">        
+        <ng-container *ngFor="let cell of Columns?.cell" [matColumnDef]="cell.id">
+          <th mat-header-cell *matHeaderCellDef> {{cell.head}} </th>
+          <td mat-cell *matCellDef="let resource"> {{resource[cell.id]}} </td>
+        </ng-container>
+      
+        <tr mat-header-row *matHeaderRowDef="Columns?.view"></tr>
+        <tr mat-row *matRowDef="let resource; columns: Columns?.view;"></tr>
+    </table>
+    
+    <mat-paginator [pageSize]="8" aria-label="Selecione a quantidade de registros"></mat-paginator>    
+</div>

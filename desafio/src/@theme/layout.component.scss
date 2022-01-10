@@ -1,0 +1,29 @@
+.mat-table {
+    min-height: 77.4vh;
+}
+
+.mat-spinner {
+    position: absolute;
+    top: calc(50vh - 130px);
+    left: calc(50vw - 50px);
+}
+
+.table {
+    margin: 2vh 1vw; 
+    border: 1px solid #595959; 
+}
+
+tr.mat-row, tr.mat-header-row {
+    height: 8.6vh;
+}
+
+mat-paginator {
+    height: 9vh;
+}
+
+.mat-column-id {
+    width: 3vw;
+    text-align: right;
+    padding-right: 1vw;
+}
+
