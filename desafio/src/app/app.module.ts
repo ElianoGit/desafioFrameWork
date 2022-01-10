@@ -8,44 +8,31 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatToolbarModule,
          MatIconModule,
-         MatTableModule,
-         MatPaginatorModule,
          MatSidenavModule,
          MatMenuModule, 
-         MatProgressSpinnerModule,
          MatSelectModule} from '@angular/material';
 
 import { CoreModule } from 'src/@core/core.module';
 import { JSONPlaceHolderAPI } from 'src/@core/api/jsonplaceholder-api';
 
 import { AppRoutingModule } from './app-routing.module';
-
-import { LayoutComponent } from 'src/@theme/layout.component';
-import { AlbumsComponent } from './resources/albums/albums.component';
-import { PostsComponent } from './resources/posts/posts.component';
-import { TodosComponent } from './resources/todos/todos.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NgModel,
-    LayoutComponent,
-    AlbumsComponent,
-    PostsComponent,
-    TodosComponent
+    NgModel
   ],
   imports: [
+    RouterModule,
     AppRoutingModule,
     HttpClientModule,
     BrowserModule,
     BrowserAnimationsModule,
     MatToolbarModule,
     MatIconModule,
-    MatTableModule,
-    MatPaginatorModule,
     MatSidenavModule,
     MatMenuModule,
-    MatProgressSpinnerModule,
     MatSelectModule,
     CoreModule.forRoot()
   ],
