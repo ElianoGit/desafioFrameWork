@@ -1,6 +1,21 @@
 # Desafio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.0.
+Enunciado do Desafio:
+
+Construa uma aplicação Web que irá utilizar as listagens de uma API Rest.
+
+Esta aplicação deve conter os menus e/ou páginas:
+POSTAGENS
+ALBUNS
+TO-DOs
+
+A API a ser utilizada está publicada em https://jsonplaceholder.typicode.com/
+
+Utilizar Angular 8 junto com Angular Material (https://material.angular.io/) para desenvolver a aplicação.
+
+## Install Dependencies
+
+Run `npm install`
 
 ## Development server
 
